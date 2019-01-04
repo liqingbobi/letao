@@ -7,11 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>乐淘</title>
   <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.min.css">
+  <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
   <link rel="stylesheet" href="./css/login.css">
 </head>
 
 <body class="body-bg">
 
+  
   <!-- 设置个版心 大屏4份 其他撑满 -->
 
   <div class="container">
@@ -23,22 +26,22 @@
         </div>
         <div class="panel-body">
           <!-- 表单组建 -->
-          <form class="form-horizontal">
+          <form class="form-horizontal" id="form">
             <div class="form-group">
               <label for="username" class="col-sm-3 control-label">用户名:</label>
               <div class="col-sm-9">
-                <input type="text" class="form-control" id="username" placeholder="请输入账号">
+                <input type="text" name="username" class="form-control" id="username" placeholder="请输入账号">
               </div>
             </div>
             <div class="form-group">
               <label for="password" class="col-sm-3 control-label">密　码:</label>
               <div class="col-sm-9">
-                <input type="password" class="form-control" id="password" placeholder="请输入密码">
+                <input type="password" name="password" class="form-control" id="password" placeholder="请输入密码">
               </div>
             </div>
             <div class="form-group">
               <div class="col-sm-offset-3 col-sm-6">
-                <button type="submit" class="btn btn-default pull-left">重置</button>
+                <button type="reset" class="btn btn-default pull-left">重置</button>
                 <button type="submit" class="btn btn-primary pull-right">登陆</button>
               </div>
             </div>
@@ -47,6 +50,11 @@
       </div>
     </div>
   </div>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+  <script src="./lib/nprogress/nprogress.js"></script>
+  <script src="./js/login.js"></script>
 </body>
 
 </html>
