@@ -1,0 +1,119 @@
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none ;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none ;
+}
+.mt_20 {
+  margin-top: 20px ;
+}
+.red {
+  color: #A94442 ;
+}
+.lt-left {
+  width: 180px;
+  height: 100%;
+  position: fixed ;
+  left: 0;
+  top: 0;
+  background-color: #222D32 ;
+  z-index: 999;
+  transition: all 1s ;
+}
+.lt-left.hidemenu {
+  left: -180px;
+}
+.lt-left .brand {
+  width: 100%;
+  height: 50px;
+  background-color: #367FA9;
+}
+.lt-left .brand a {
+  display: block ;
+  line-height: 50px;
+  font-size: 24px ;
+  color: #ffffff ;
+  text-align: center ;
+}
+.lt-left .user {
+  height: 180px;
+  padding-top: 30px ;
+}
+.lt-left .user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50% ;
+  display: block;
+  margin: 0 auto ;
+}
+.lt-left .user p {
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px ;
+  color: #ffffff ;
+  text-align: center ;
+}
+.lt-left .nav a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  padding-left: 40px;
+  border-left: 3px solid transparent ;
+}
+.lt-left .nav a.current {
+  background-color: #1D1F21 ;
+  border-left: 3px solid #006699;
+}
+.lt-left .nav a i {
+  margin-right: 4px;
+}
+.lt-left .nav .child {
+  display: none ;
+}
+.lt-left .nav .child a {
+  padding-left: 60px ;
+}
+.lt-right {
+  background-color: palegoldenrod ;
+  height: 2000px;
+  padding-left: 180px ;
+  padding-top: 50px;
+  z-index: 998;
+  transition: all 1s ;
+}
+.lt-right.hidemenu {
+  padding-left: 0;
+}
+.lt-right .lt-right-top {
+  height: 50px;
+  width: 100%;
+  background-color: #3C8DBC;
+  position: fixed ;
+  top: 0;
+  left: 0;
+  padding-left: 180px ;
+  transition: all 1s ;
+}
+.lt-right .lt-right-top.hidemenu {
+  padding-left: 0 ;
+}
+.lt-right .lt-right-top a {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center ;
+  color: #ffffff ;
+  font-size: 20px;
+}
+.lt-right .echarts_left,
+.lt-right .echarts_right {
+  height: 400px;
+  width: 48%;
+  background-color: skyblue ;
+}
