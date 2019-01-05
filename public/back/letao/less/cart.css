@@ -103,7 +103,6 @@ td {
   left: 0;
   padding-left: 180px ;
   transition: all 1s ;
-  z-index: 998;
 }
 .lt-right .lt-right-top.hidemenu {
   padding-left: 0 ;
