@@ -115,6 +115,8 @@
                   <!-- 挖个坑 -->
                 </ul>
               </div>
+              <!-- 准备一个隐藏域 专门用于提交 -->
+              <input type="hidden" name="categoryId">
             </div>
   
             <div class="form-group">
@@ -128,10 +130,11 @@
                 data-url 指定后台接口地址
               -->
               <input type="file" name="pic1"  data-url="/category/addSecondCategoryPic" id="fileupload" style="display: none">
-            </div>
-  
+            </div>  
             <div class="form-group" id="imgBox">
               <img style="width: 100px;" src="./images/none.png" alt="">
+              <!-- 准备一个隐藏域 专门用于提交 -->
+              <input type="hidden" name="brandLogo">
             </div>
           </div>
           <!-- 底部 -->
@@ -183,7 +186,7 @@
 
   <script type="text/html" id="dropdownTpl">
   {{each rows v i }}
-    <li><a href="#">{{v.categoryName}}</a></li>
+    <li><a href="#" data-id="{{v.id}}">{{v.categoryName}}</a></li>
   {{/each}}
   </script>
 
